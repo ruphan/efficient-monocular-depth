@@ -3,13 +3,13 @@ import argparse
 import os
 
 def video_record():
-    parser = argparse.ArgumentParser(description='Video capture to disk')
+    parser = argparse.ArgumentParser(description='Video capture params')
     parser.add_argument('--device', type=int, default=0,
                         help='Camera device index')
     parser.add_argument('--name', type=str, default='test',
                         help='Video file name')
     parser.add_argument('--output_dir', type=str, default='raw_dataset',
-                        help='Raw dataet folder with videos')
+                        help='Raw dataset directory to store the videos')
     args = parser.parse_args()
 
 
